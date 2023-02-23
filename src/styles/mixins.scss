@@ -1,0 +1,40 @@
+@use "sass:math";
+
+@mixin font($type) {
+  font-family: "Roboto", sans-serif;
+
+  @if $type == "field" {
+    font-size: #{math.div(14, 16)}em;
+    font-weight: 400;
+  }
+
+  @if $type == "label" {
+    font-size: #{math.div(12, 16)}em;
+    font-weight: 400;
+  }
+
+  @if $type == "icon" {
+    font-size: #{math.div(10, 16)}em;
+    font-weight: 400;
+  }
+
+  @if $type == "minimal" {
+    font-size: #{math.div(11, 16)}em;
+    font-weight: 700;
+  }
+
+  @if $type == "button" {
+    font-size: #{math.div(12, 16)}em;
+    font-weight: 500;
+  }
+
+  @if $type == "subtitle" {
+    font-size: #{math.div(18, 16)}em;
+    font-weight: 400;
+  }
+
+  @if $type == "title" {
+    font-size: #{math.div(20, 16)}em;
+    font-weight: 500;
+  }
+}

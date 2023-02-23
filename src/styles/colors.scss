@@ -1,0 +1,43 @@
+@use "sass:color" as *;
+
+$color0: #212123;
+$color0-variant0: #111113;
+$color0-variant1: #5d5e67;
+$color0-variant1-lit50: adjust($color0-variant1, $lightness: 50%);
+$color0-variant1-dar50: adjust($color0-variant1, $lightness: -50%);
+$color0-variant2: #191a1d;
+$color0-variant3: #242427;
+$color0-variant4: #3b3c42;
+$color0-variant5: #1c1c20;
+
+$color1: #fff;
+$color1-variant0: #d9d9d9;
+$color1-variant1: #acacac;
+
+$color2: #3485fb;
+$color2-variant0: #5297fc;
+$color2-variant1: #045ddf;
+
+$color3: #35934e;
+$color3-variant0: #43b762;
+$color3-variant1: #246a37;
+
+$color4: #933535;
+$color4-variant0: #bb4545;
+$color4-variant1: #752a2a;
+
+$color5: #0e0e0e;
+$color5-variant0: #131313;
+$color5-variant1: #131313;
+
+$color6: #131313;
+$color6-variant0: #202020;
+$color6-variant1: #202020;
+
+$color7: #ffb000;
+$color7-variant0: #ffc74c;
+$color7-variant1: #c78100;
+
+$color8: #1f5127;
+$color8-variant0: #45bb4e;
+$color8-variant1: #2a7537;

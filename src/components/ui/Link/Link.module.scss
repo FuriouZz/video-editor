@@ -1,0 +1,13 @@
+@use "~/styles/mixins" as *;
+
+.Root {
+  @include font("label");
+  display: inline-block;
+  color: $color2-hover;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,86 @@
+.Root {
+  display: inline-block;
+}
+
+.flaticon-drag {
+  display: grid;
+  grid-template-columns: 5px 5px;
+  grid-template-rows: 5px 5px;
+  grid-gap: 3px;
+
+  .dot {
+    background-color: #7b7b7c;
+    border-radius: 50%;
+    transition: all 0.25s;
+  }
+
+  &:hover .dot {
+    background-color: #fff;
+  }
+}
+
+.flaticon:before {
+  font-family: "Flaticon";
+  font-style: normal;
+}
+
+.flaticon-arrow-down:before {
+  content: "\f100";
+}
+
+.flaticon-arrow-up:before {
+  content: "\f100";
+  transform: scaleY(-1);
+}
+
+.flaticon-arrow-left:before {
+  content: "\f101";
+}
+
+.flaticon-arrow-right:before {
+  content: "\f102";
+}
+
+.flaticon-home:before {
+  content: "\f103";
+}
+
+.flaticon-garbage:before {
+  content: "\f108";
+}
+
+.flaticon-plus:before {
+  content: "\f105";
+}
+
+.flaticon-minus:before {
+  content: "\f106";
+}
+
+.flaticon-search:before {
+  content: "\f107";
+}
+
+.flaticon-close:before {
+  content: "\f108";
+}
+
+.flaticon-duplicate:before {
+  content: "\f109";
+}
+
+.flaticon-star:before {
+  content: "\f10c";
+}
+
+.flaticon-play:before {
+  content: "\f10d";
+}
+
+.flaticon-stop:before {
+  content: "\f10e";
+}
+
+.flaticon-mute:before {
+  content: "\f10f";
+}

@@ -1,0 +1,50 @@
+.Root {
+  user-select: none;
+  display: flex;
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    transition: all 0.25s;
+    pointer-events: none;
+  }
+}
+
+.Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  cursor: grab;
+}
+
+.Box:hover .ui-icon__drag .dot {
+  background-color: #fff;
+}
+
+.Content {
+  flex: 1;
+}
+
+.Dragged .Box {
+  cursor: grabbing;
+}
+
+.Droppable .Box,
+.Droppable .Content {
+  pointer-events: none;
+}
+
+.Droppable:before {
+  background-color: rgba(white, 0.05);
+}
+
+.Droppable&--hover:before {
+  background-color: rgba(white, 0.1);
+}

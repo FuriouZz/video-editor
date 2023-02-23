@@ -1,0 +1,24 @@
+.Root {
+}
+
+.Top {
+  display: flex;
+}
+
+.TopInner {
+  display: flex;
+  flex: 1;
+  width: auto;
+}
+
+.BottomOuter {
+  display: flex;
+}
+
+.BottomInner {
+  flex: 1;
+}
+
+.Drag {
+  background-color: var(--color0-variant4);
+}

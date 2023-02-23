@@ -1,0 +1,240 @@
+@use "~/styles/mixins" as *;
+
+.Root {
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+
+  // display: block;
+  // cursor: pointer;
+  // padding: 8px 20px;
+  // background-color: darken(#212123, 25%);
+  // transition: background-color 0.4s;
+  // text-align: center;
+  // user-select: none;
+
+  // &.hidden {
+  //   display: none;
+  // }
+
+  // &:before {
+  //   content: "";
+  //   display: inline-block;
+  //   height: 100%;
+  //   vertical-align: middle;
+  //   margin-left: 0;
+  // }
+
+  // .Container {
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
+
+  // span {
+  //   position: relative;
+  //   top: -2px;
+  //   font-family: Lato-Regular, "Helvetica";
+  //   font-size: (10/16)em;
+  //   color: #F0F1F5;
+  //   letter-spacing: 0.2em;
+  //   text-transform: uppercase;
+  //   transition: color 0.4s;
+  // }
+
+  // &:hover {
+  //   background-color: #3b3b3e;
+  //   span {
+  //     color: #ffffff;
+  //   }
+  // }
+}
+
+.Root.WithIcon {
+  padding: 9px 20px;
+
+  .Container {
+    display: flex;
+    @include font("icon");
+    justify-content: center;
+
+    .ContainerInner {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.Root:not(.WithIcon) {
+  padding: 9px 20px;
+
+  .ContainerInner {
+    display: flex;
+    @include font("button");
+    color: var(--color1);
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .Icon {
+    margin-left: 5px;
+  }
+}
+
+.Root.DefaultState {
+  background-color: var(--color0-variant0);
+
+  &:hover {
+    background-color: var(--color0-variant1);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color0-variant2);
+    &:hover {
+      background-color: var(--color0-variant2);
+    }
+  }
+}
+
+.Root.DisabledState {
+  background-color: var(--color0);
+  pointer-events: none;
+
+  .ContainerInner {
+    opacity: 0.25;
+  }
+}
+
+.Root.ConfirmState {
+  background-color: var(--color3);
+
+  &:hover {
+    background-color: var(--color3-variant0);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color3-variant1);
+    &:hover {
+      background-color: var(--color3-variant1);
+    }
+  }
+}
+
+.Root.ImportantState {
+  background-color: #511f1f; //var(--color4)
+
+  &:hover {
+    background-color: var(--color4-variant0);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color4-variant1);
+    &:hover {
+      background-color: var(--color4-variant1);
+    }
+  }
+}
+
+.Root.ActionState {
+  background-color: var(--color2);
+
+  &:hover {
+    background-color: var(--color2-variant0);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color2-variant1);
+    &:hover {
+      background-color: var(--color2-variant1);
+    }
+  }
+}
+
+.Root.TabActiveState {
+  background-color: var(--color6);
+
+  &:hover {
+    background-color: var(--color6-variant0);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color6-variant1);
+    &:hover {
+      background-color: var(--color6-variant1);
+    }
+  }
+}
+
+.Root.TabInactiveState {
+  background-color: var(--color5);
+  pointer-events: none;
+
+  &:hover {
+    background-color: var(--color5-variant0);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color5-variant1);
+    &:hover {
+      background-color: var(--color5-variant1);
+    }
+  }
+}
+
+.Root.StarredState {
+  background-color: var(--color7);
+
+  &:hover {
+    background-color: var(--color7-variant0);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color7-variant1);
+    &:hover {
+      background-color: var(--color7-variant1);
+    }
+  }
+}
+
+.Root.GreenState {
+  background-color: var(--color8);
+
+  &:hover {
+    background-color: var(--color8-variant0);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color8-variant1);
+    &:hover {
+      background-color: var(--color8-variant1);
+    }
+  }
+}
+
+.Root.ActiveState {
+  background-color: var(--color0-variant1);
+
+  &:hover {
+    background-color: var(--color0-variant1-lit50);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color0-variant1-dar50);
+    &:hover {
+      background-color: var(--color0-variant1-dar50);
+    }
+  }
+}

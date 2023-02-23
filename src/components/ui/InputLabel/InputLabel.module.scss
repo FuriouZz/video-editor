@@ -1,0 +1,23 @@
+@use "~/styles/mixins" as *;
+
+.Root {
+  box-sizing: border-box;
+  display: flex;
+  min-width: 150px;
+  height: 30px;
+  padding: 5px 10px;
+  align-items: center;
+  background-color: var(--color0-variant5);
+  user-select: none;
+}
+
+.Content {
+  @include font("label");
+  color: var(--color1-variant1);
+}
+
+.Type {
+  @include font("minimal");
+  color: var(--color0-variant1);
+  margin-left: 5px;
+}

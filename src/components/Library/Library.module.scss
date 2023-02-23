@@ -1,0 +1,19 @@
+.Root {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.Button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.Input {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}

@@ -1,0 +1,27 @@
+.Root {
+  background-color: var(--color0-variant3);
+}
+
+.Header {
+  display: flex;
+}
+
+.Header .InputLabel {
+  flex: 1;
+  background-color: var(--color0-variant0);
+}
+
+.InputBlank {
+  width: 20px;
+}
+
+.Content {
+  display: flex;
+  padding: 20px 0;
+
+  & > .ui-label,
+  & > .ContentInner {
+    width: auto;
+    flex: 1;
+  }
+}

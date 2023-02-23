@@ -1,0 +1,57 @@
+@use "~/styles/mixins" as *;
+
+.Root {
+  display: block;
+  background-color: var(--color0-variant0);
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: var(--color0-variant1);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color0-variant2);
+
+    &:hover {
+      background-color: var(--color0-variant2);
+    }
+  }
+}
+
+.Root.Drag {
+  background-color: var(--color0-variant1);
+}
+
+.Root label {
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 9px 20px;
+  /* text-align: center; */
+  white-space: nowrap;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin: 0;
+  }
+}
+
+.Root span {
+  @include font("button");
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  color: var(--color1);
+  transition: color 0.4s;
+}
+
+.Root input {
+  display: none;
+}

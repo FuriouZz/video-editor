@@ -1,0 +1,34 @@
+.Root {
+  background-color: var(--color0-variant3);
+}
+
+.Items {
+  flex: 1;
+}
+
+.Header {
+  display: flex;
+
+  // .input-label {
+  //   flex: 1
+  //   background-color: $color0-variant0
+  // }
+}
+
+.Buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Inner {
+  display: flex;
+  padding: 20px 0;
+}
+
+// .input-list-item + .input-list-item {
+//   padding-top: 20px
+// }
+
+// .input-file label {
+//   padding: 7px 20px
+// }
