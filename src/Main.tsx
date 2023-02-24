@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <div>
       <ProjectProvider>
-        <Library></Library>
+        <Library />
       </ProjectProvider>
     </div>
   );

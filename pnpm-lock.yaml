@@ -6,6 +6,7 @@ specifiers:
   '@furiouzz/lol': 0.0.36-beta.23
   '@tauri-apps/api': ^1.1.0
   '@tauri-apps/cli': ^1.1.0
+  '@types/dom-mediacapture-transform': ^0.1.4
   '@types/node': ^18.7.10
   autoprefixer: ^10.4.13
   jszip: ^3.10.1
@@ -29,6 +30,7 @@ dependencies:
 
 devDependencies:
   '@tauri-apps/cli': 1.2.1
+  '@types/dom-mediacapture-transform': 0.1.4
   '@types/node': 18.11.10
   autoprefixer: 10.4.13_postcss@8.4.19
   postcss: 8.4.19
@@ -530,6 +532,16 @@ packages:
       '@tauri-apps/cli-linux-x64-musl': 1.2.1
       '@tauri-apps/cli-win32-ia32-msvc': 1.2.1
       '@tauri-apps/cli-win32-x64-msvc': 1.2.1
+    dev: true
+
+  /@types/dom-mediacapture-transform/0.1.4:
+    resolution: {integrity: sha512-G4DI51gU3zp/nCFVP7O5dv3sZ7nVXy3Dqooup8tDhvdzUNeAMiC0XIFGiwH3UHPh/t6L5odMOHwB3BYlY86WKw==}
+    dependencies:
+      '@types/dom-webcodecs': 0.1.5
+    dev: true
+
+  /@types/dom-webcodecs/0.1.5:
+    resolution: {integrity: sha512-dsAE+4ws75W5mmNmIZ7IKZwv4bcz5GgPuA87u+Mk1CeVWB6g7ZwBfizRwBZDeyO12RSxoU3NlRa8jgLYQeSZGg==}
     dev: true
 
   /@types/node/18.11.10:

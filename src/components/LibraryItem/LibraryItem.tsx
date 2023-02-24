@@ -1,10 +1,10 @@
+import VideoLayer from "../layers/VideoLayer/VideoLayer";
 import css from "./LibraryItem.module.scss";
-import { IAsset } from "../../types";
 
-export default function LibraryItem(props: { asset: IAsset }) {
+export default function LibraryItem(props: { asset: TY.IAsset }) {
   return (
     <div class={css.Root}>
-      <div>{props.asset.file.name}</div>
+      {props.asset.type === "video" && <VideoLayer asset={props.asset} />}
     </div>
   );
 }
